@@ -13,6 +13,10 @@ Feature: code-breaker submits guess
     When I guess "<guess>"
     Then the mark should be "<mark>"
 
+  Scenarios: no matches
+    | code | guess | mark |
+    | 1234 | 5555  |      |
+
   Scenarios: 1 number correct
     | code | guess | mark |
     | 1234 | 1555  | +    |
